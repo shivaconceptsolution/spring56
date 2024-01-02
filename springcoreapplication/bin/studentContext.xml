@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="stu" class="com.advanceexample.Student">
+     <constructor-arg value="1001" type="int"></constructor-arg>  
+      <constructor-arg>
+      <list>  
+         <value>C</value>  
+         <value>C++</value>  
+         <value>DS</value>  
+          <value>JAVA</value>  
+     </list>  
+      </constructor-arg>  
+    
+    </bean>   
+     <bean id="stunew" class="com.advanceexample.Student">
+     <constructor-arg>
+      <map>  
+        <entry key="1001"  value="Python"></entry>  
+        <entry key="1002" value="Java"></entry>  
+        <entry key="1003" value=".NET"></entry>  
+     </map>  
+     </constructor-arg>  
+    
+    </bean>   
+       
+</beans>
